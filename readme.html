@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HAR to PDF Converter - Gen-Z Security</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #181a20;
+      color: #e0e0e0;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 32px #000a, 0 2px 8px #0008;
+    }
+
+    h1, h2, h3 {
+      color: #fff;
+      text-shadow: 0 2px 8px #0008;
+    }
+
+    pre {
+      background: linear-gradient(90deg, #23272f 60%, #232f2f 100%);
+      color: #d4d4d4;
+      padding: 16px;
+      overflow-x: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 16px #0006;
+      border: 1px solid #232f3e;
+    }
+
+    code {
+      background: #23272f;
+      color: #ffb86c;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 1.05em;
+      font-family: "Fira Mono", "Consolas", monospace;
+    }
+
+    .folder-structure {
+      background: #23272f;
+      color: #b8c7fa;
+      padding: 16px;
+      border-left: 4px solid #7f5af0;
+      font-family: "Fira Mono", "Consolas", monospace;
+      white-space: pre-wrap;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #0004;
+    }
+
+    a {
+      color: #7f5af0;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ffb86c;
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      border-top: 2px dashed #444b;
+    }
+
+    .footer {
+      font-style: italic;
+      margin-top: 30px;
+      text-align: center;
+      background: linear-gradient(90deg, #23272f 60%, #232f2f 100%);
+      color: #7f5af0;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #0006;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #ffb86c;
+      text-shadow: 0 1px 4px #0008;
+    }
+
+    .heading-icon {
+      margin-right: 8px;
+      filter: drop-shadow(0 2px 4px #0008);
+    }
+
+    ul, ol {
+      background: #20232a;
+      padding: 16px 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px #0004;
+      margin-bottom: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📄 HAR to High-Quality PDF Converter</h1>
+
+  <p>This project extracts high-quality base64-encoded images from a <code>.har</code> file (e.g., from browser DevTools) and converts them into a single high-resolution PDF. It automatically detects any <code>.har</code> file in the current folder and processes it.</p>
+
+  <hr>
+
+  <h2>🧰 Requirements</h2>
+
+  <p>Before running the script, make sure you have the following installed:</p>
+
+  <h3>✅ Python Modules</h3>
+  <ul>
+    <li><code>tqdm</code> – for progress bars</li>
+    <li><code>pillow</code> – for image processing and PDF conversion</li>
+  </ul>
+
+  <h3>🔧 Install Dependencies</h3>
+  <pre><code>pip install -r requirements.txt</code></pre>
+
+  <hr>
+
+  <h2>🚀 How to Use</h2>
+
+  <h3>📁 Folder Structure</h3>
+  <div class="folder-structure">
+view-only-pdf-downloader/
+├── main.py<br>
+├── requirements.txt<br>
+├── readme.txt<br>
+└── README.MD
+  </div>
+
+  <h3>▶️ Step-by-Step</h3>
+  <ol>
+    <li>Place your <code>.har</code> file (exported from browser DevTools) into the <code>view-only-pdf-downloader/</code> folder.</li>
+    <li>Open a terminal in that folder.</li>
+    <li>Run the script:</li>
+  </ol>
+
+  <pre><code>python main.py</code></pre>
+
+  <p>The script will:</p>
+  <ul>
+    <li>Automatically find the first <code>.har</code> file in the folder</li>
+    <li>Extract all base64-encoded images</li>
+    <li>Save them in the <code>extracted_images/</code> folder</li>
+    <li>Convert them into a high-quality PDF (<code>final_high_quality_output.pdf</code>)</li>
+    <li>Prompt you to either keep or delete the extracted images</li>
+  </ul>
+
+  <hr>
+
+  <h2>📝 Notes</h2>
+  <ul>
+    <li>Only <code>image/*</code> MIME type with <code>base64</code> encoding is processed</li>
+    <li>Images are saved with their correct extensions (e.g., <code>.png</code>, <code>.jpg</code>)</li>
+    <li>Output PDF is 300 DPI – suitable for printing</li>
+    <li>You will be prompted after PDF generation to clean up image files</li>
+  </ul>
+
+  <hr>
+
+  <h2>👨‍💻 Author</h2>
+  <p><strong>Mr. Jyotiprasad</strong><br>
+  📺 YouTube Channel: <a href="https://www.youtube.com/@GenZSecurity" target="_blank">Gen-Z Security</a><br>
+  🙏 Please subscribe to support more tools and tutorials!</p>
+
+  <div class="footer">Made with ❤️ by Gen-Z Security 🚀</div>
+
+</body>
+</html>
