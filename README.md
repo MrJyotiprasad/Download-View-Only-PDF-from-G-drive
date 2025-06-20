@@ -1,4 +1,4 @@
-# 📄 View-Only PDF Downloader from Google Drive
+# 📄 Download View-Only PDF from G-drive
 
 This is a Python script that helps you **download view-only PDF files** from Google Drive by extracting base64-encoded images from a `.har` file (captured via browser DevTools) and converting them into a **high-quality PDF**.
 
@@ -58,7 +58,7 @@ The script will:
 ## 🗂️ Project Structure
 
 ```
-view-only-pdf-downloader/
+Download View-Only PDF from G-drive/
 ├── main.py
 ├── requirements.txt
 ├── readme.txt
